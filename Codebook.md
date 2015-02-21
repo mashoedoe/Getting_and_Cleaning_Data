@@ -1,18 +1,18 @@
-test_train_tidy database Codebook
-=================
+# test_train_tidy database Codebook
 
 There are 180 records in this dataset and each record has 68 variables namely:
 * An identifier of the subject who carried out the experiment.
 * An identifier of the activity carried out
 * 66 variables representing average(mean) values calculated for each subject and each activity from 66 of the 561 vector of features in the "Human Activity Recognition Using Smartphones Dataset" 
 
-Variable in column 1
+### Variable in column 1
 Each of the 30 volunteers who carried out the experiment is represented by a unique number (from 1 to 30) in the "subject" variable
 
-Variable in column 2
+### Variable in column 2
 Each subject performed six activities(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) represented as levels in the factor variable "activity"
 
-Variables in column 3 to 68
+### Variables in column 3 to 68
+
 Variables 3 to 68 are the mean(average) values for each subject and each activty calculated for 66 time and frequency domain features and are normalized and bounded within [-1,1]
 
 The names for variables 3 to 68 are descriptions of the data from from which they were averaged and can be understood as follows:
@@ -35,75 +35,73 @@ Variable names that contain "X" or "Y" or "Z" at the end, denote 3-axial signals
 
 Variables in column 3 to 35 are the means estimated from these signals while Variables in column 36 to 68 are standard deviations estimated from these signals. The string "mean" or "std" denote which is applicable.
 
-Names, measurement level and maximum possible range of values for the 68 variables for each record are:
+##### Names; measurement level; maximum possible range of values for the 68 variables for each record are:
 
- subject                      integer   1 to 30
- 
- activity                     factor    6 levels "WALKING","WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LYING"
- 
- time_Body_Acc_mean_X         numeric   -1 to 1
- time_Body_Acc_mean_Y         numeric   -1 to 1
- time_Body_Acc_mean_Z         numeric   -1 to 1
- time_Gravity_Acc_mean_X      numeric   -1 to 1
- time_Gravity_Acc_mean_Y      numeric   -1 to 1
- time_Gravity_Acc_mean_Z      numeric   -1 to 1
- time_Body_Acc_Jerk_mean_X    numeric   -1 to 1
- time_Body_Acc_Jerk_mean_Y    numeric   -1 to 1
- time_Body_Acc_Jerk_mean_Z    numeric   -1 to 1
- time_Body_Gyro_mean_X        numeric   -1 to 1
- time_Body_Gyro_mean_Y        numeric   -1 to 1
- time_Body_Gyro_mean_Z        numeric   -1 to 1
- time_Body_Gyro_Jerk_mean_X   numeric   -1 to 1
- time_Body_Gyro_Jerk_mean_Y   numeric   -1 to 1
- time_Body_Gyro_Jerk_mean_Z   numeric   -1 to 1
- time_Body_Acc_Mag_mean       numeric   -1 to 1
- time_Gravity_Acc_Mag_mean    numeric   -1 to 1
- time_Body_Acc_Jerk_Mag_mean  numeric   -1 to 1
- time_Body_Gyro_Mag_mean      numeric   -1 to 1
- time_Body_Gyro_Jerk_Mag_mean numeric   -1 to 1
- FFT_Body_Acc_mean_X          numeric   -1 to 1
- FFT_Body_Acc_mean_Y          numeric   -1 to 1
- FFT_Body_Acc_mean_Z          numeric   -1 to 1
- FFT_Body_Acc_Jerk_mean_X     numeric   -1 to 1
- FFT_Body_Acc_Jerk_mean_Y     numeric   -1 to 1
- FFT_Body_Acc_Jerk_mean_Z     numeric   -1 to 1
- FFT_Body_Gyro_mean_X         numeric   -1 to 1
- FFT_Body_Gyro_mean_Y         numeric   -1 to 1
- FFT_Body_Gyro_mean_Z         numeric   -1 to 1
- FFT_Body_Acc_Mag_mean        numeric   -1 to 1
- FFT_Body_Acc_Jerk_Mag_mean   numeric   -1 to 1
- FFT_Body_Gyro_Mag_mean       numeric   -1 to 1
- FFT_Body_Gyro_Jerk_Mag_mean  numeric   -1 to 1
- time_Body_Acc_std_X          numeric   -1 to 1
- time_Body_Acc_std_Y          numeric   -1 to 1
- time_Body_Acc_std_Z          numeric   -1 to 1
- time_Gravity_Acc_std_X       numeric   -1 to 1
- time_Gravity_Acc_std_Y       numeric   -1 to 1
- time_Gravity_Acc_std_Z       numeric   -1 to 1
- time_Body_Acc_Jerk_std_X     numeric   -1 to 1
- time_Body_Acc_Jerk_std_Y     numeric   -1 to 1
- time_Body_Acc_Jerk_std_Z     numeric   -1 to 1
- time_Body_Gyro_std_X         numeric   -1 to 1
- time_Body_Gyro_std_Y         numeric   -1 to 1
- time_Body_Gyro_std_Z         numeric   -1 to 1
- time_Body_Gyro_Jerk_std_X    numeric   -1 to 1
- time_Body_Gyro_Jerk_std_Y    numeric   -1 to 1
- time_Body_Gyro_Jerk_std_Z    numeric   -1 to 1
- time_Body_Acc_Mag_std        numeric   -1 to 1
- time_Gravity_Acc_Mag_std     numeric   -1 to 1
- time_Body_Acc_Jerk_Mag_std   numeric   -1 to 1
- time_Body_Gyro_Mag_std       numeric   -1 to 1
- time_Body_Gyro_Jerk_Mag_std  numeric   -1 to 1
- FFT_Body_Acc_std_X           numeric   -1 to 1
- FFT_Body_Acc_std_Y           numeric   -1 to 1
- FFT_Body_Acc_std_Z           numeric   -1 to 1
- FFT_Body_Acc_Jerk_std_X      numeric   -1 to 1
- FFT_Body_Acc_Jerk_std_Y      numeric   -1 to 1
- FFT_Body_Acc_Jerk_std_Z      numeric   -1 to 1
- FFT_Body_Gyro_std_X          numeric   -1 to 1
- FFT_Body_Gyro_std_Y          numeric   -1 to 1
- FFT_Body_Gyro_std_Z          numeric   -1 to 1
- FFT_Body_Acc_Mag_std         numeric   -1 to 1
- FFT_Body_Acc_Jerk_Mag_std    numeric   -1 to 1
- FFT_Body_Gyro_Mag_std        numeric   -1 to 1
- FFT_Body_Gyro_Jerk_Mag_std   numeric   -1 to 1
+###### subject; integer; 1 to 30
+###### activity; factor; 6 levels "WALKING","WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LYING"
+###### time_Body_Acc_mean_X; numeric; -1 to 1
+###### time_Body_Acc_mean_Y; numeric; -1 to 1
+###### time_Body_Acc_mean_Z; numeric; -1 to 1
+###### time_Gravity_Acc_mean_X; numeric; -1 to 1
+###### time_Gravity_Acc_mean_Y; numeric; -1 to 1
+###### time_Gravity_Acc_mean_Z; numeric; -1 to 1
+###### time_Body_Acc_Jerk_mean_X; numeric; -1 to 1
+###### time_Body_Acc_Jerk_mean_Y; numeric; -1 to 1
+###### time_Body_Acc_Jerk_mean_Z; numeric; -1 to 1
+###### time_Body_Gyro_mean_X; numeric; -1 to 1
+###### time_Body_Gyro_mean_Y; numeric; -1 to 1
+###### time_Body_Gyro_mean_Z; numeric; -1 to 1
+###### time_Body_Gyro_Jerk_mean_X; numeric; -1 to 1
+###### time_Body_Gyro_Jerk_mean_Y; numeric; -1 to 1
+###### time_Body_Gyro_Jerk_mean_Z; numeric; -1 to 1
+###### time_Body_Acc_Mag_mean; numeric; -1 to 1
+###### time_Gravity_Acc_Mag_mean; numeric; -1 to 1
+###### time_Body_Acc_Jerk_Mag_mean; numeric; -1 to 1
+###### time_Body_Gyro_Mag_mean; numeric;  -1 to 1
+###### time_Body_Gyro_Jerk_Mag_mean numeric; -1 to 1
+###### FFT_Body_Acc_mean_X; numeric; -1 to 1
+###### FFT_Body_Acc_mean_Y; numeric; -1 to 1
+###### FFT_Body_Acc_mean_Z; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_mean_X; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_mean_Y; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_mean_Z; numeric; -1 to 1
+###### FFT_Body_Gyro_mean_X; numeric; -1 to 1
+###### FFT_Body_Gyro_mean_Y; numeric; -1 to 1
+###### FFT_Body_Gyro_mean_Z; numeric; -1 to 1
+###### FFT_Body_Acc_Mag_mean; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_Mag_mean; numeric; -1 to 1
+###### FFT_Body_Gyro_Mag_mean; numeric; -1 to 1
+###### FFT_Body_Gyro_Jerk_Mag_mean; numeric   -1 to 1
+###### time_Body_Acc_std_X; numeric; -1 to 1
+###### time_Body_Acc_std_Y; numeric; -1 to 1
+###### time_Body_Acc_std_Z; numeric ; -1 to 1
+###### time_Gravity_Acc_std_X; numeric; -1 to 1
+###### time_Gravity_Acc_std_Y; numeric; -1 to 1
+###### time_Gravity_Acc_std_Z; numeric; -1 to 1
+###### time_Body_Acc_Jerk_std_X; numeric; -1 to 1
+###### time_Body_Acc_Jerk_std_Y; numeric; -1 to 1
+###### time_Body_Acc_Jerk_std_Z; numeric; -1 to 1
+###### time_Body_Gyro_std_X; numeric; -1 to 1
+###### time_Body_Gyro_std_Y; numeric; -1 to 1
+###### time_Body_Gyro_std_Z;numeric; -1 to 1
+###### time_Body_Gyro_Jerk_std_X; numeric; -1 to 1
+###### time_Body_Gyro_Jerk_std_Y; numeric; -1 to 1
+###### time_Body_Gyro_Jerk_std_Z; numeric; -1 to 1
+###### time_Body_Acc_Mag_std; numeric; -1 to 1
+###### time_Gravity_Acc_Mag_std; numeric; -1 to 1
+###### time_Body_Acc_Jerk_Mag_std; numeric; -1 to 1
+###### time_Body_Gyro_Mag_std; numeric; -1 to 1
+###### time_Body_Gyro_Jerk_Mag_std; numeric; -1 to 1
+###### FFT_Body_Acc_std_X; numeric; -1 to 1
+###### FFT_Body_Acc_std_Y; numeric; -1 to 1
+###### FFT_Body_Acc_std_Z; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_std_X; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_std_Y; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_std_Z; numeric; -1 to 1
+###### FFT_Body_Gyro_std_X; numeric; -1 to 1
+###### FFT_Body_Gyro_std_Y; numeric; -1 to 1
+###### FFT_Body_Gyro_std_Z; numeric; -1 to 1
+###### FFT_Body_Acc_Mag_std; numeric; -1 to 1
+###### FFT_Body_Acc_Jerk_Mag_std; numeric; -1 to 1
+###### FFT_Body_Gyro_Mag_std; numeric; -1 to 1
+###### FFT_Body_Gyro_Jerk_Mag_std; numeric; 1 to 1l 
