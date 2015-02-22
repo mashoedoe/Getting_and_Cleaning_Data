@@ -1,4 +1,4 @@
-# README
+# ReadME
 
 One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones   
@@ -13,16 +13,16 @@ codebook_URL <- "https://github.com/mashoedoe/Getting_and_Cleaning_Data/CodeBook
 
 The data source for creating this tidy data represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 
-## A.1.
+## A.1
 store the URL for the source data for the project in the object named data_URL
 
-## A.2.
+## A.2
 download and unzip the source data into your working directory. It contains text files with two groups of data: 
 a test data set
 a training data set
 The source data aslo contains the activity names and a codebook that explains the source data, applicable to both the test and training data sets.
 
-## A.3.
+## A.3
 Open the codebook for the original source data in R's text editor 
 to get familiar with the source data 
 
@@ -47,7 +47,7 @@ column bind the subject, activity and signal data for the test data, adding a co
 Now prepare the training data by reading the subjects, activities and signal data for the training data. The descriptive variable names created in step B.1.i are provided as the argument col.names when reading in the signal data into the data.frame "train":
 ### B.2.iv
 column bind the subject, activity and signal data for the training data, adding a column that identifies this as the training data
-### B.2.V
+### B.2.v
 Merge the test and training datasets by row binding them together
 
 ## B.3 (Step 2 of the Course Project Instructions)
