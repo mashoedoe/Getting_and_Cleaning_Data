@@ -1,14 +1,17 @@
 # ReadME
 
-One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
+One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones   
 
 The goal of this repository is to prepare a tidy data set from the data source that can be used for later analysis as per the instructions of the Getting and Cleaning Data Course Project instructions. The steps taken to produce the final tidy data set are listed below from A.1 to B.7.
 
 The R script that creates the tidy data set can be downloaded here:
-ReadME_URL <- "https://github.com/mashoedoe/Getting_and_Cleaning_Data/run_analysis.md"
+
+ReadME_URL <- "https://github.com/mashoedoe/Getting_and_Cleaning_Data/run_analysis.R"
 
 The Codebook that has a further information about the variables in the tidy data set created by run_analysis.R can be downloaded here:
+
 codebook_URL <- "https://github.com/mashoedoe/Getting_and_Cleaning_Data/CodeBook.md"
 
 The data source for creating this tidy data represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
